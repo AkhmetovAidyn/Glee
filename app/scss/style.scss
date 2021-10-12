@@ -9,16 +9,16 @@
     display: flex;
     justify-content: space-between;
   }
-  .logo{
-    display: flex;
-    font-size: 36px;
-    line-height: 58px;
-    color: #436372;
-    @extend %quicksand-500;
-  }
-  .logo__img{
-    padding-right: 10px;
-  }
+}
+.logo{
+  display: flex;
+  font-size: 36px;
+  line-height: 58px;
+  color: #436372;
+  @extend %quicksand-500;
+}
+.logo__img{
+  padding-right: 10px;
 }
 
 .menu{
@@ -37,6 +37,8 @@
     color: #436372;
     font-size: 15px;
     line-height: 12px;
+    padding: 0 2px 1px;
+    transition: all .3s;
     @extend %quicksand-400;
     &:hover{
       border-bottom: 1px solid #436372;
@@ -98,6 +100,105 @@
   }
 }
 
+
+
+.footer-top{
+  padding: 75px 0;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+  &__contact{
+    width: 200px;
+    // margin-top: -30px;
+  }
+  &__adress,
+  &__phone,
+  &__email{
+    margin-bottom: 10px;
+    line-height: 24px;
+    @extend %quicksand-400;
+    display: block;
+  }
+  &__nav{
+    width: 170px;
+    margin-top: 20px;
+  }
+  &__link{
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    display: block;
+    @extend %quicksand-400;
+  }
+  &__item-form{
+    max-width: 270px;
+    margin-top: 20px;
+  }
+  &__logo-footer{
+    margin-bottom: 10px;
+  }
+  &__title{
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+  &__text{
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %quicksand-400;
+    margin-bottom: 30px;
+  }
+  &__form{
+    display: flex;
+  }
+  &__form-input{
+    background-color: #fef7f0;
+    border: none;
+    width: 170px;
+    padding: 10px 12px;
+    &::placeholder{
+      color: #234969;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  &__form-btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+  }
+}
+.footer-bottom{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 32px;
+  @extend %quicksand-400;
+  &__copy{
+    font-size: 14px;
+    line-height: 32px;
+    color: #7b7b7b;
+  }
+  &__menu-items{
+    display: flex;
+  }
+  &__menu-link{
+    margin-left: 10px;
+  }
+  .span-line{
+    margin-left: 10px;
+  }
+}
 
 
 
