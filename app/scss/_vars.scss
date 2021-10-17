@@ -1,3 +1,5 @@
+$title: #191919;
+
 %quicksand-400{
 	font-family: 'Rubik-Regular', sans-serif;
 	font-weight: 400;
@@ -6,4 +8,27 @@
 %quicksand-500{
 	font-family: 'Rubik-Medium', sans-serif;
 	font-weight: 500;
+}
+
+%DMSans-400{
+	font-family: 'DMSans-Regular', sans-serif;
+	font-weight: 400;
+}
+
+%DMSans-500{
+	font-family: 'DMSans-Medium', sans-serif;
+	font-weight: 500;
+}
+
+%DMSans-700{
+	font-family: 'DMSans-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%title{
+  font-size: 36px;
+  line-height: 43px;
+  color: $title;
+  text-align: center;
+  margin-bottom: 35px;
 }
