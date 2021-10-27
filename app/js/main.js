@@ -6,4 +6,9 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 2000
   });
+
+  var mixer = mixitup('.products__grid');
+  var mixer = mixitup('.design__items-content');
+
+
 });
