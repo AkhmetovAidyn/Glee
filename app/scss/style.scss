@@ -102,7 +102,6 @@
 }
 
 
-
 .footer-top{
   padding: 75px 0;
   border-bottom: 1px solid #dae4e9;
@@ -201,6 +200,18 @@
   }
 }
 
+.top{
+  padding: 30px 0 30px;
+  background-color: #edf1f4;
+  text-align: center;
+  &__title{
+    color: #222933;
+    font-size: 36px;
+    line-height: 24px;
+    @extend %quicksand-300;
+    margin-bottom: 10px;
+  }
+}
 
 .top-slider{
   background-color: #fcd7b6;
@@ -649,7 +660,7 @@
   padding: 260px 0 85px;
   background-color: #fef7f0;
   width: 100%;
-  margin-top: -183px;
+  margin-top: -187px;
   &__inner{
     max-width: 1170px;
     margin: 0 auto;
@@ -659,6 +670,81 @@
     justify-content: space-around;
   }
 }
+
+
+.modal{
+  max-width: 470px;
+  margin: 0 auto 117px;
+  padding-top: 114px;
+  &__label{
+    margin-bottom: 30px;
+    display: block;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    margin-top: 10px;
+    height: 55px;
+    padding: 0 15px;
+  }
+  &__btn{
+    display: block;
+    background-color: #a3bbc8;
+    color: #fffefe;
+    @extend %quicksand-500;
+    font-size: 18px;
+    line-height: 19px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__check{
+    margin-bottom: 30px;
+  }
+  &__error{
+    color: #436372;
+    font-size: 14px;
+    line-height: 24px;
+    @extend %quicksand-400;
+  }
+  &__question{
+    font-size: 14px;
+    line-height: 24px;
+    color: #436372;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+  }
+  &__link{
+    display: block;
+    border: 2px solid #a3bbc8;
+    color: #243f4d;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    @extend %quicksand-500;
+  }
+}
+
+.blockquote-partner--login{
+  padding: 85px 0;
+  background-color: #fef7f0;
+  width: 100%;
+}
+
+
+
+
 
 
 

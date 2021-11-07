@@ -78,7 +78,7 @@
   </header>
   <main class="main">
 
-    <section class="top">
+    <div class="top">
       <div class="container">
         <h2 class="top__title">Log in</h2>
         <div class="breadcrumbs">
@@ -91,9 +91,69 @@
             </li>
           </ul>
         </div>
+      </div>
+    </div>
 
+    <section class="modal">
+      <div class="container">
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Username or email address *
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password *
+            <input class="modal__input" type="password" required>
+          </label>
+          <button class="modal__btn" type="submit">Log in</button>
+          <div class="modal__box">
+            <label class="modal__check">
+              <input type="checkbox">
+              Remember me
+            </label>
+            <a class="modal__error" href="#">Lost your password?</a>
+          </div>
+          <label class="modal__question">
+            Not registered? No problem
+          </label>
+            <a class="modal__link" href="#">
+              Create an account
+            </a>
+        </form>
       </div>
     </section>
+
+    <div class="blockquote-partner--login">
+      <div class="blockquote-partner__inner">
+        <div class="blockquote-partner__items">
+          <div class="blockquote__item">
+            <a class="blockquote__link-images" href="#">
+              <img src="images/content/partner/partner-1.png" alt="img partner">
+            </a>
+          </div>
+          <div class="blockquote__item">
+            <a class="blockquote__link-images" href="#">
+              <img src="images/content/partner/partner-2.png" alt="img partner">
+            </a>
+          </div>
+          <div class="blockquote__item">
+            <a class="blockquote__link-images" href="#">
+              <img src="images/content/partner/partner-3.png" alt="img partner">
+            </a>
+          </div>
+          <div class="blockquote__item">
+            <a class="blockquote__link-images" href="#">
+              <img src="images/content/partner/partner-4.png" alt="img partner">
+            </a>
+          </div>
+          <div class="blockquote__item">
+            <a class="blockquote__link-images" href="#">
+              <img src="images/content/partner/partner-5.png" alt="img partner">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
   <footer class="footer">
