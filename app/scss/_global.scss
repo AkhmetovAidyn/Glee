@@ -60,4 +60,33 @@ a{
   }
 }
 
-
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 105px 0 0 0;
+  &.pagination-left{
+    display: flex;
+    justify-content: start;
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    border: 1px solid #a3bbc8;
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__link{
+    color: #243f4d;
+    @extend %quicksand-400;
+    cursor: pointer;
+    padding: 20px;
+    display: inline-block;
+    line-height: 0;
+  }
+  &__link--active{
+    background-color:#a3bbc8;
+    color: #fff;
+  }
+}

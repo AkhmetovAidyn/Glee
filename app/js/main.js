@@ -1,11 +1,18 @@
-$(function () {
-
-  $(".star").rateYo({
+ $(".star").rateYo({
     starWidth: "12px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true
   });
+
+$(".star-content").rateYo({
+  starWidth: "18px",
+  normalFill: "#d6d6d6",
+  ratedFill: "#ffcc00",
+  readOnly: true
+});
+
+$(function () {
 
   var keypressSlider = document.querySelector(".filter-price__slider");
   var input0 = document.querySelector(".filter-price__input-0");
@@ -93,26 +100,27 @@ $(function () {
       });
     });
   });
-
-  $('.top-slider__inner').slick({
-    dots: true,
-    arrows: false,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000
-  });
-
-  var containerEl1 = $('[data-ref="container-1"]');
-  var containerEl2 = $('[data-ref="container-2"]');
-
-  var config = {
-    controls: {
-      scope: 'local'
-    }
-  };
-
-  var mixer1 = mixitup(containerEl1, config);
-  var mixer2 = mixitup(containerEl2, config);
-
+  
+  
 });
 
+
+$('.top-slider__inner').slick({
+  dots: true,
+  arrows: false,
+  fade: true,
+  autoplay: true,
+  autoplaySpeed: 2000
+});
+
+var containerEl1 = $('[data-ref="container-1"]');
+var containerEl2 = $('[data-ref="container-2"]');
+
+var config = {
+  controls: {
+    scope: 'local'
+  }
+};
+
+var mixer1 = mixitup(containerEl1, config);
+var mixer2 = mixitup(containerEl2, config);
