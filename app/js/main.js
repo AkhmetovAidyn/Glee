@@ -1,8 +1,28 @@
 $(function () {
 
+  $('.product-related__item-box').slick({
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrows-left-slide.svg" alt="arrow-left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrows-right-slide.svg" alt="arrow-right"></button>',
+    infinite: false
+  });
+
+
+  $('.product-tabs__top-item').on('click', function(e) {
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+    
+  });
+ 
+
   $('.product-one__num').styler();
 
-  $('.num-in span').click(function () {
+  $('.num-in span').click (function () {
     var $input = $(this).parents('.num-block').find('input.in-num');
     if ($(this).hasClass('minus')) {
       var count = parseFloat($input.val()) - 1;
@@ -16,7 +36,7 @@ $(function () {
       $input.val(count);
     }
     else {
-      var count = parseFloat($input.val()) + 1
+      var count = parseFloat($input.val()) + 1;
       $input.val(count);
       if (count > 1) {
         $(this).parents('.num-block').find(('.minus')).removeClass('dis');
@@ -45,19 +65,19 @@ $(function () {
     fade: true
   });
 
- $(".star").rateYo({
+  $(".star").rateYo({
     starWidth: "12px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true
   });
 
-$(".star-content").rateYo({
-  starWidth: "18px",
-  normalFill: "#d6d6d6",
-  ratedFill: "#ffcc00",
-  readOnly: true
-});
+  $(".star-content").rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
 
 
   var keypressSlider = document.querySelector(".filter-price__slider");
@@ -146,7 +166,9 @@ $(".star-content").rateYo({
       });
     });
   });
+
 });
+
 
 $('.top-slider__inner').slick({
   dots: true,
@@ -167,5 +189,4 @@ var config = {
 
 var mixer1 = mixitup(containerEl1, config);
 var mixer2 = mixitup(containerEl2, config);
-
 
