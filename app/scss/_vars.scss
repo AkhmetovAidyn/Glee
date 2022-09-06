@@ -1,3 +1,11 @@
+$title: #191919;
+$default: #9a9a9a;
+
+%quicksand-300{
+	font-family: 'Rubik-Light', sans-serif;
+	font-weight: 300;
+}
+
 %quicksand-400{
 	font-family: 'Rubik-Regular', sans-serif;
 	font-weight: 400;
@@ -6,4 +14,45 @@
 %quicksand-500{
 	font-family: 'Rubik-Medium', sans-serif;
 	font-weight: 500;
+}
+
+%quicksand-700{
+	font-family: 'Rubik-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%DMSans-400{
+	font-family: 'DMSans-Regular', sans-serif;
+	font-weight: 400;
+}
+
+%DMSans-500{
+	font-family: 'DMSans-Medium', sans-serif;
+	font-weight: 500;
+}
+
+%DMSans-700{
+	font-family: 'DMSans-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%Poppins-700{
+	font-family: 'Poppins-Bold', sans-serif;
+	font-weight: 700;
+}
+
+%title{
+  font-size: 36px;
+  line-height: 43px;
+  color: $title;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
